@@ -1,0 +1,87 @@
+{
+  "_from": "dir-compare",
+  "_id": "dir-compare@2.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-cmOgS23lSolrsdrDSwWdu/USalfXEwQ/4r3MyIur2U/td2pIp8TnO71ME4M8siaE49xg43tIVX3XzriDOgfdow==",
+  "_location": "/dir-compare",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "dir-compare",
+    "name": "dir-compare",
+    "escapedName": "dir-compare",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/dir-compare/-/dir-compare-2.2.0.tgz",
+  "_shasum": "945ae53b685cba8de7172442c657d5bcbef680b9",
+  "_spec": "dir-compare",
+  "_where": "/tmp/tt",
+  "author": {
+    "name": "Liviu Grigorescu"
+  },
+  "bin": {
+    "dircompare": "src/cli/dircompare.js"
+  },
+  "bugs": {
+    "url": "https://github.com/gliviu/dir-compare/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "buffer-equal": "1.0.0",
+    "colors": "1.0.3",
+    "commander": "2.9.0",
+    "minimatch": "3.0.2"
+  },
+  "deprecated": false,
+  "description": "Node JS directory compare",
+  "devDependencies": {
+    "@types/node": "^12.11.7",
+    "copyfiles": "^1.2.0",
+    "memory-streams": "0.1.0",
+    "semver": "5.6.0",
+    "shelljs": "0.3.0",
+    "tar-fs": "1.16.2",
+    "temp": "0.9.0",
+    "ts-node": "^8.5.4",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^3.7.4"
+  },
+  "files": [
+    "src"
+  ],
+  "homepage": "https://github.com/gliviu/dir-compare#readme",
+  "keywords": [
+    "compare",
+    "directory",
+    "folder"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "dir-compare",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gliviu/dir-compare.git"
+  },
+  "scripts": {
+    "build": "tsc && npm run copydeps",
+    "clean": "rm -rf build && rm -rf .nyc_output && rm -rf coverage",
+    "copydeps": "copyfiles \"test/expected/**\" test/testdir.tar package.json build",
+    "coverage": "npx nyc --exclude \"build/test/**\" --reporter=lcov npm test && npx nyc report",
+    "docs": "npx typedoc --includeVersion --includeDeclarations --excludeExternals --theme minimal --mode file --readme none --gitRevision master --toc compare,compareSync,fileCompareHandlers,Options,Result --out docs ./src/index.d.ts",
+    "extest": "npm run pretest && ./test/extended/init.sh && test/extended/runall.sh",
+    "lint": "tslint -p tsconfig.json",
+    "pretest": "npm install && npm run build",
+    "test": "node build/test/runTests.js",
+    "toc": "npx markdown-toc README.md; echo \n"
+  },
+  "types": "src/index.d.ts",
+  "version": "2.2.0"
+}

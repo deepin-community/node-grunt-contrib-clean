@@ -1,0 +1,50 @@
+node-grunt-contrib-clean (2.0.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * Fix autopkgtest using new dh-sequence-nodejs features (≥ 0.9.48)
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 26 Nov 2020 10:51:54 +0100
+
+node-grunt-contrib-clean (2.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 28 Mar 2020 08:32:19 +0100
+
+node-grunt-contrib-clean (2.0.0-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 2.0.0
+  * Install doc
+  * Embed dir-compare for test only
+  * Fix Gruntfile for test
+  * Enable upstream test during autopkgtest only to avoid circular dependencies
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 21 Feb 2020 13:25:54 +0100
+
+node-grunt-contrib-clean (1.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.0
+  * Bump debhelper compatibility level to 12
+  * Update VCS fields to salsa
+  * Use pkg-js-tools auto install
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Update copyright
+  * Update description
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 21 Feb 2020 12:25:58 +0100
+
+node-grunt-contrib-clean (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #844204)
+
+ -- Sruthi Chandran <srud@disroot.org>  Sun, 13 Nov 2016 16:10:23 +0530
