@@ -1,3 +1,21 @@
+node-grunt-contrib-clean (2.0.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.1, no changes needed.
+  * Enable __proto__ in test, needed here for pkg-js-autopkgtest 0.15
+  * New upstream version 2.0.1
+
+ -- Yadd <yadd@debian.org>  Mon, 12 Sep 2022 11:45:38 +0200
+
+node-grunt-contrib-clean (2.0.0-4) unstable; urgency=medium
+
+  * Team upload
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+
+ -- Yadd <yadd@debian.org>  Mon, 03 Jan 2022 16:14:38 +0100
+
 node-grunt-contrib-clean (2.0.0-3) unstable; urgency=medium
 
   * Team upload
